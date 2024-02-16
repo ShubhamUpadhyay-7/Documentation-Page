@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,intial-scale=1.0" />
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Syntax">Syntax</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Selectors">Selectors</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Properties">Properties</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Box_Model">Box Model</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Specificity">Specificity</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Media_Queries">Media Queries</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Transitions_and_Animations">Transitions and Animations</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Flexbox_and_Grid">Flexbox and Grid</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Units">Units</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Comments">Comments</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Integration">Integration</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Browser_Compatibility">Browser Compatibility</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>CSS is a cornerstone technology used for web development, enabling the separation of content and
+                presentation. It provides a powerful mechanism for controlling the visual aspects of web pages,
+                including layout, colors, fonts, and animations.</p>
+        </section>
+        <section class="main-section" id="Syntax">
+            <header>Syntax</header>
+            <p>CSS rules consist of a selector and a declaration block enclosed in curly braces. Selectors target HTML
+                elements, and declaration blocks contain one or more declarations separated by semicolons. Each
+                declaration consists of a property and a value, separated by a colon.</p>
+        </section>
+        <section class="main-section" id="Selectors">
+            <header>Selectors</header>
+            <ul>
+                <li><span class="bold">Element Selector:</span> Targets HTML elements by their tag name. For example,
+                    `p` selects all p tag elements.<code>p{
+            font-family:arial;
+          }
+          </code>
+                </li>
+                <li><span class="bold">Class Selector:</span> Targets elements with a specific class attribute.
+                    <code>Syntax: .classname.</code></li>
+                <li><span class="bold">ID Selector:</span> Targets a single element with a specific ID attribute.
+                    <code>Syntax: #idname.</code></li>
+                <li><span class="bold">Attribute Selector:</span> Targets elements with a specific attribute or
+                    attribute value. <code>Syntax: [attribute=value].</code></li>
+                <li><span class="bold">Pseudo-classes and Pseudo-elements:</span> Selectors that define a special state
+                    of an element or parts of an element,<code> such as :hover, :nth-child(), or ::before.</code></li>
+            </ul>
+        </section>
+        <section class="main-section" id="Properties">
+            <header>Properties</header>
+            <ul>
+                <li><span class="bold">Color:</span> Defines the text color using keywords, hexadecimal, RGB, or HSL
+                    values.</li>
+                <li><span class="bold">Font:</span> Sets the font family, size, style (italic, bold), and weight (light,
+                    normal, bold).</li>
+                <li><span class="bold">Background:</span> Sets the background color or image for an element.</li>
+                <li><span class="bold">Border:</span> Sets the border properties including color, width, and style
+                    (solid, dashed, dotted).</li>
+                <li><span class="bold">Margin:</span> Sets the margin space around an element, controlling its
+                    positioning relative to other elements.</li>
+                <li><span class="bold">Padding:</span> Sets the padding space around an element's content, maintaining
+                    distance from the border.</li>
+                <li><span class="bold">Width and Height:</span> Sets the dimensions of an element, either fixed values
+                    or percentages of the parent container.</li>
+                <li><span class="bold">Positioning:</span> Controls the position of an element within its containing
+                    element, offering options like static, relative, absolute, and fixed.</li>
+                <li><span class="bold">Display:</span> Defines how an element is displayed in the layout flow, such as
+                    block, inline, inline-block, or none.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Box_Model">
+            <header>Box Model</header>
+            <ul>
+                <li><span class="bold">Content:</span> The actual content of the box, where text and images appear.</li>
+                <li><span class="bold">Padding:</span> The transparent area around the content, inside the border.</li>
+                <li><span class="bold">Border:</span> The border surrounding the padding.</li>
+                <li><span class="bold">Margin:</span> The transparent area outside the border, separating the element
+                    from other elements on the page.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Specificity">
+            <header>Specificity</header>
+            <p> Determines which CSS rule takes precedence when multiple rules target the same element.</p>
+            <p>Inline styles have the highest specificity, followed by IDs, classes, and element selectors.</p>
+            <p>Specificity is calculated based on the number of ID selectors, class selectors, and element selectors in
+                a rule.
+            <p>
+        </section>
+        <section class="main-section" id="Media_Queries">
+            <header>Media Queries</header>
+            <p> Used to apply different styles based on the characteristics of the device, such as screen size,
+                orientation, and resolution.</p>
+            <p> Allows for responsive web design, adapting layouts and styles for various devices and screen sizes.</p>
+        </section>
+        <section class="main-section" id="Transitions_and_Animations">
+            <header>Transitions and Animations</header>
+            <ul>
+                <li><span class="bold">Transitions:</span> Define smooth changes in property values over a specified
+                    duration.</li>
+                <li><span class="bold">Animations:</span> Define keyframes for specifying styles at various points
+                    during the animation, offering more complex and dynamic effects.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Flexbox_and_Grid">
+            <header>Flexbox and Grid</header>
+            <ul>
+                <li><span class="bold">Flexbox:</span> A layout model providing a more efficient way to distribute space
+                    among items in a container, making it easier to create flexible and responsive layouts.</li>
+                <li><span class="bold">Grid:</span> A two-dimensional layout system for designing web page layouts in
+                    rows and columns, offering precise control over element positioning and alignment.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Units">
+            <header>Units</header>
+            <ul>
+                <li><span class="bold">Absolute Units:</span> Pixels (px), points (pt), inches (in), centimeters (cm).
+                    These units provide fixed sizes irrespective of other factors.</li>
+                <li><span class="bold">Relative Units:</span> Percentages (%), em, rem, vw (viewport width), vh
+                    (viewport height). Relative units adapt to the surrounding context, making them useful for
+                    responsive design.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Comments">
+            <header>Comments</header>
+            <p>CSS comments can be added using `/* comment here */`, allowing developers to annotate their code for
+                clarity or temporarily disable styles during testing or debugging.</p>
+        </section>
+        <section class="main-section" id="Integration">
+            <header>Integration</header>
+            <p>CSS can be included in an HTML document via the style tag, linked externally using the link tag, or added
+                inline within HTML elements using the style attribute. External CSS files are commonly used for better
+                organization and maintainability.</p>
+        </section>
+        <section class="main-section" id="Browser_Compatibility">
+            <header>Browser Compatibility</header>
+            <p>While CSS is standardized, certain properties and selectors may behave differently across different web
+                browsers. Testing and vendor-prefixes may be necessary for ensuring consistent rendering across various
+                platforms and browser versions. Cross-browser testing tools can help identify and resolve compatibility
+                issues.</p>
+        </section>
+    </main>
+</body>
+
+</html>
